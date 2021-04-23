@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 
 :root {
   --main-text-color: #212121;
@@ -32,6 +33,11 @@ h2,
 h3,
 p {
   margin: 0;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /*header*/
@@ -137,7 +143,7 @@ nav {
 
 /*blocke-one*/
 
-section.section-hero {
+.section-hero {
   padding: 193px 0;
   display: flex;
   align-items: center;
@@ -160,11 +166,6 @@ section.section-hero {
 }
 
 /*team*/
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .default-text {
   color: var(--default-text-color);
@@ -241,7 +242,10 @@ section.section-hero {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
+}
+
+.team-item-content {
+  padding: 30px 10px;
 }
 
 .our-team {
@@ -256,7 +260,6 @@ section.section-hero {
 }
 
 .employeer-name {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -282,11 +285,11 @@ section.section-hero {
   display: initial;
 }
 
-.footer .default-list li:not(:last-child) {
+.footer-list-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer address {
+.footer-address {
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
@@ -314,7 +317,7 @@ section.section-hero {
   margin: 0 0 50px;
 }
 
-.portfolio-tabs-list li:not(:last-child) {
+.portfolio-tabs-item:not(:last-child) {
   margin-right: 9px;
 }
 
